@@ -46,7 +46,6 @@ export function RemotionRoot() {
           }
         }}
       />
-
       {/* ── Be Right Back ──────────────────────────────────────── */}
       <Composition
         id="BrbScreen"
@@ -66,7 +65,6 @@ export function RemotionRoot() {
           }
         }}
       />
-
       {/* ── Ending Screen ──────────────────────────────────────── */}
       <Composition
         id="EndingScreen"
@@ -78,7 +76,6 @@ export function RemotionRoot() {
         height={1080}
         defaultProps={{ audioSrc: AUDIO_FILE }}
       />
-
       {/* ── Interval Loop (GIF-ready) ──────────────────────────── */}
       <Composition
         id="IntervalLoop"
@@ -94,7 +91,6 @@ export function RemotionRoot() {
           noun: 'Help',
         }}
       />
-
       {/* ── Lower Third ────────────────────────────────────────── */}
       <Composition
         id="LowerThird"
@@ -105,10 +101,10 @@ export function RemotionRoot() {
         width={1920}
         height={1080}
         defaultProps={{
-          label: 'SENIOR PASTOR',
-          primary: 'Apostle Joshua Selman',
-          secondary: 'Jesus House | JCCI JA',
-          accent: 'purple',
+          label: 'PASTOR',
+          primary: 'Paul Bamgbose',
+          secondary: 'Jubilee | JCCI JA',
+          accent: 'purple' as const,
         }}
       />
       {/* ── Scripture Overlay (WebM + alpha for OBS) ───────── */}
@@ -123,10 +119,10 @@ export function RemotionRoot() {
         defaultProps={{
           verseNumber: '2',
           verse:
-            'It is like the precious ointment upon the head, that ran down upon the beard, even Aaron\'s beard: that went down to the skirts of his garments;',
+            "It is like the precious ointment upon the head, that ran down upon the beard, even Aaron's beard: that went down to the skirts of his garments;",
           reference: 'Psalms 133:2 (KJV)',
           translation:
-            'C\'est comme l\'huile précieuse qui, répandue sur la tête, Descend sur la barbe, sur la barbe d\'Aaron, Qui descend sur le bord de ses vêtements.',
+            "C'est comme l'huile précieuse qui, répandue sur la tête, Descend sur la barbe, sur la barbe d'Aaron, Qui descend sur le bord de ses vêtements.",
           translationReference: 'Psaumes 133:2 (LSG)',
           tagline: 'Intimacy | Partnership | Fellowship',
           cameraGap: 380,
