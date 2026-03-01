@@ -1,0 +1,37 @@
+{
+  "name": "jccija-remotion",
+  "version": "0.1.0",
+  "description": "JCCIJA Stream Starting Screen",
+  "scripts": {
+    "start": "remotion studio",
+    "studio": "remotion studio",
+    "render:starting": "remotion render StartingStream out/starting-stream.mp4",
+    "render:brb": "remotion render BrbScreen out/brb-screen.mp4",
+    "render:ending": "remotion render EndingScreen out/ending-screen.mp4",
+    "render:lower-third": "remotion render LowerThird out/lower-third.webm --codec=vp8",
+    "render:scripture": "remotion render ScriptureOverlay out/scripture-overlay.webm --codec=vp8",
+    "render:gif": "remotion render IntervalLoop out/interval-loop.gif --codec=gif",
+    "bundle": "remotion bundle",
+    "build": "remotion render StartingStream out/starting-stream.mp4",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.431",
+    "@remotion/media": "^4.0.0",
+    "@remotion/zod-types": "4.0.431",
+    "mediabunny": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react-refresh": "^0.14.2",
+    "typescript": "^5.3.0"
+  },
+  "remotion": {
+    "entryPoint": "src/index.ts"
+  }
+}
